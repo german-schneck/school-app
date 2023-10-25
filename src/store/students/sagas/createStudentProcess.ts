@@ -38,7 +38,6 @@ function* createStudentProcess({
       lastName: data.lastName,
       email: data.email,
       age: data.age,
-      region: data.region,
     };
 
     yield put(setStudents({...currentStudents, [newId]: newStudent}));

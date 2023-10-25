@@ -10,7 +10,6 @@ export interface FormValues {
   email: Student['email'];
   gender: Student['gender'];
   age?: Student['age'];
-  region: Student['region'];
 }
 
 export interface NewStudentFormProps {

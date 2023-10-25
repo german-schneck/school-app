@@ -1,5 +1,6 @@
 // Dependencies
 import React from 'react';
+import {SafeAreaView} from 'react-native';
 import {Provider} from 'react-redux';
 import {PersistGate} from 'redux-persist/integration/react';
 
@@ -16,8 +17,10 @@ const App = () => {
   return (
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
-        <NavigationContainer ref={navigationRef}>
-          <RootNavigator />
+        <NavigationContainer ref={navigationRef} independent={true}>
+          <SafeAreaView style={{flex: 1}}>
+            <RootNavigator />
+          </SafeAreaView>
         </NavigationContainer>
       </PersistGate>
     </Provider>

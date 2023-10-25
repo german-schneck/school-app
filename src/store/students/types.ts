@@ -55,7 +55,6 @@ export interface CreateStudentAction {
       lastName: Student['lastName'];
       email: Student['email'];
       age: Student['age'];
-      region: Student['region'];
       gender: Student['gender'];
     };
   };
@@ -79,12 +78,6 @@ export enum Gender {
   FEMALE = 'female',
 }
 
-export enum Region {
-  EMEA = 'EMEA',
-  APAC = 'APAC',
-  AMER = 'AMER',
-}
-
 export interface Student {
   id: number;
   firstName: string;
@@ -92,7 +85,6 @@ export interface Student {
   email: string;
   age: Date;
   gender: Gender;
-  region: Region;
 }
 
 /**
