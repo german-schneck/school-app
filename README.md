@@ -45,6 +45,7 @@ The project structure is organized as follows:
 
 ## Multimedia
 https://github.com/german-schneck/school-app/assets/15254932/1064364f-ecd8-4546-8ec7-b05e2b382eb1
+
 https://github.com/german-schneck/school-app/assets/15254932/2068e8d1-4344-456b-b1b3-214b0f36b991
 
 ## Contributing
