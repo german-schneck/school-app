@@ -1,5 +1,5 @@
 // Dependencies
-import {StyleSheet, Platform} from 'react-native';
+import {StyleSheet} from 'react-native';
 import theme from '../../styles/theme';
 
 export default StyleSheet.create({
@@ -13,9 +13,6 @@ export default StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     padding: 18,
-    ...(Platform.OS === 'ios' && {
-      paddingBottom: 38,
-    }),
     borderTopWidth: 1,
     borderTopColor: '#e9e9e9',
   },
