@@ -26,7 +26,7 @@ function NewStudentScreen(): React.ReactElement {
    */
   const handleSubmitCreateStudent = useCallback(
     (values: FormValues): void => {
-      const {firstName, lastName, age, email, gender, region} = values;
+      const {firstName, lastName, age, email, gender} = values;
       if (age) {
         createStudent({
           firstName,
@@ -34,7 +34,6 @@ function NewStudentScreen(): React.ReactElement {
           email,
           age,
           gender,
-          region,
         });
       }
     },
@@ -42,7 +41,7 @@ function NewStudentScreen(): React.ReactElement {
   );
 
   return (
-    <ScrollView contentContainerStyle={styles.layout}>
+    <ScrollView style={styles.layout} contentContainerStyle={styles.container}>
       <View style={styles.field}>
         <Title
           title={'Register new student'}

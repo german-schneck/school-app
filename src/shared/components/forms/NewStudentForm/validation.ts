@@ -1,6 +1,6 @@
 // Dependencies
 import * as yup from 'yup';
-import {Gender, Region} from '../../../../store/students/types';
+import {Gender} from '../../../../store/students/types';
 
 const validationSchema = yup.object().shape({
   firstName: yup.string().required('First name is required'),
@@ -21,11 +21,6 @@ const validationSchema = yup.object().shape({
       'Age must be at most 18 years old',
     )
     .required('Age is required'),
-
-  region: yup
-    .string()
-    .oneOf([Region.AMER, Region.EMEA, Region.APAC], 'Invalid region')
-    .required('Region is required'),
 });
 
 export default validationSchema;
